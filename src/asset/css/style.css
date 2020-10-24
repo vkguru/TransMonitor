@@ -124,3 +124,54 @@ p {
   object-fit: cover;
 }
 
+.sidebar {
+  width: 20%;
+  background: #fff;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.verify-transfer {
+  padding-top: 2rem;
+  margin-left: 2rem;
+}
+
+.verify-transfer__invoice {
+  padding: 15px 20px;
+  background-color: #27AE60;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+
+.sidebar__menu--group {
+  margin-top: 2rem;
+}
+
+.sidebar__menu--group p {
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar__menu--text {
+  list-style-type: none;
+  padding: 0 0 0.75rem 2rem;
+}
+
+.sidebar__menu--text svg {
+  margin-right: 10px;
+}
+
+.sidebar__menu--text.active {
+  background: var(--brand-color-light);
+  padding: 0.75rem 2rem;
+  border-left: 5px solid var(--navbar-brand-color);
+}
+
+.sidebar__menu--merchant {
+  padding-top: 10px;
+}
