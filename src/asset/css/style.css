@@ -175,3 +175,46 @@ p {
 .sidebar__menu--merchant {
   padding-top: 10px;
 }
+
+.main {
+  width: 80%;
+  position: absolute;
+  left: 20%;
+}
+
+.notify {
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+.notify__card {
+  width: 25%;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  margin: 20px 5px 0;
+}
+
+.notify__card-lt {
+  width: 60%;
+}
+
+.notify__card-lt p {
+  font-size: 11px;
+  margin-top: 30px;
+  padding-left: 15px;
+}
+
+.notify__card-lt h3 {
+  padding-top: 6px;
+  padding-left: 15px;
+  font-size: 18px;
+  font-family: 'Segoe UI';
+  font-weight: 500;
+  color: #262626;
+}
+
+.notify__card-graph {
+  width: 40%;
+}
