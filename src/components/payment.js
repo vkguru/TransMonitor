@@ -22,6 +22,7 @@ const Payment = () => {
 
   const data = Data;
 
+  const total = data.map((res) => (res.id));
 
   return (
     
@@ -97,9 +98,26 @@ const Payment = () => {
                   <td><img src={arrow} alt="arrow" /></td>
                 </tr>
               ))}
+
+              {}
             
           </tbody>
         </table>
+
+      </div>
+
+      <div className="payment--meta">
+        
+        <div className="entries">
+          <p>Showing 1 to {total.length} of {total.length} entries</p>
+        </div>
+
+        <div className="payment-navigation">
+          <button className="prev">Previous</button>
+          <button className="active">1</button>
+          <button className="nu">2</button>
+          <button className="next">Next</button>
+        </div>
 
       </div>
     </section>

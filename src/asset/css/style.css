@@ -514,3 +514,31 @@ td.trans {
 .status button.unre:before {
   background: #7F8FA4;
 }
+
+.payment--meta {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entries p {
+  color: #000;
+}
+
+.payment-navigation button {
+  padding: 10px 15px;
+  border: 1px solid #CED0DA;
+  background: transparent;
+  font-family: 'Segoe UI';
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.payment-navigation button.active {
+  background-color: var(--navbar-brand-color);
+  color: #fff;
+}
+
+.nu {
+  color: #979797;
+}
