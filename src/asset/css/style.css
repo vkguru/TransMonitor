@@ -32,6 +32,7 @@ p {
   padding: 20px 0;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+  position: sticky;
 }
 
 .navbar {
@@ -217,4 +218,108 @@ p {
 
 .notify__card-graph {
   width: 40%;
+}
+
+.quickview {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  margin-top: 1.2rem;
+}
+
+.quickview__graph {
+  width: 60%;
+  background-color: #fff;
+  margin-right: 5px;
+}
+
+.quickview__graph--heading {
+  display: flex;
+  padding: 20px 0 0 10px;
+}
+
+.quickview__text {
+  width: 40%;
+}
+
+.quickview__text--order {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.quickview__text--order:nth-child(2) {
+  margin-top: 5px;
+}
+
+.quickview__text--order h4 {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.quickview__text--order p {
+  font-size: 15px;
+  line-height: 27px;
+  color: #262626;
+}
+
+.quickview__text--seperator {
+  background: #FDC203;
+  height: 4px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.quickview__text--fill {
+  background: #27AE60;
+  width: 80%;
+  height: 4px;
+  border-radius: 5px 0 0 5px;
+}
+
+.pending {
+  color: #FDC203;
+  font-weight: 600;
+}
+
+
+.reconciled {
+  color: #27AE60;
+  font-weight: 600;
+}
+
+.total {
+  color: var(--navbar-brand-color);
+  font-weight: 600;
+}
+
+.date {
+  width: 60%;
+}
+
+.date h3 {
+  color: #4F4F4F;
+  font-size: 14px;
+}
+
+.duration {
+  padding-right: 20px;
+}
+
+#duration {
+  font-family: 'Segoe UI';
+  border: 1px solid #DDE0E3;
+  color: #7F8FA4;
+  padding: 5px 10px;
+}
+
+.scroll-button button {
+  background: #fdfdfe;
+  padding: 5px 12px;
+  border: 1px solid #CED0DA;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.scroll-button button:nth-child(1) {
+  margin-right: 5px;
 }
