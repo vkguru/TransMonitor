@@ -109,7 +109,7 @@ const Payment = () => {
       <div className="payment--meta">
         
         <div className="entries">
-          <p>Showing 1 to {total.length} of {total.length} entries</p>
+          <p>Showing 1 to {total.length} of 1 entries</p>
         </div>
 
         <div className="payment-navigation">
