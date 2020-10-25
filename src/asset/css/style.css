@@ -32,7 +32,8 @@ p {
   padding: 20px 0;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
-  position: sticky;
+  position: fixed;
+  z-index: 99;
 }
 
 .navbar {
@@ -161,10 +162,16 @@ p {
 .sidebar__menu--text {
   list-style-type: none;
   padding: 0 0 0.75rem 2rem;
+  vertical-align: middle;
 }
 
 .sidebar__menu--text svg {
   margin-right: 10px;
+}
+
+.sidebar__menu--text a {
+  font-size: 14px;
+  vertical-align: top;
 }
 
 .sidebar__menu--text.active {
@@ -181,6 +188,7 @@ p {
   width: 80%;
   position: absolute;
   left: 20%;
+  margin-top: 10%;
 }
 
 .notify {
@@ -322,4 +330,187 @@ p {
 
 .scroll-button button:nth-child(1) {
   margin-right: 5px;
+}
+
+.payment {
+  margin: 2rem auto 0;
+  width: 95%;
+}
+
+.heading {
+  width: 100%;
+}
+
+.heading h3 {
+  font-size: 25px;
+  font-family: 'Segoe UI';
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.payment--head {
+  display: flex;
+}
+
+.payment--display {
+  width: 30%;
+}
+
+.payment--display p {
+  font-size: 13px;
+  color: #262626;
+}
+
+.payment--display select {
+  border: none;
+  background: transparent;
+  color: var(--navbar-brand-color);
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.payment--search {
+  width: 40%;
+}
+
+.payment--search svg {
+  margin-right: -15px;
+}
+
+.payment--search input {
+  border: none;
+  background: transparent;
+  width: 80%;
+  border-bottom: 1px solid #787878;
+  padding-bottom: 5px;
+  text-indent: 20px;
+}
+
+.payment--show {
+  width: 30%;
+}
+
+.payment--show p {
+  color: #262626;
+}
+
+.payment--show span {
+  padding-left: 20px;
+}
+
+.payment--show p span select {
+  border: 1px solid #CED0DA;
+  color: #414042;
+  padding: 5px;
+  background: transparent;
+}
+
+.payment--show p span select option {
+  background-color: #fff;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.payment--table {
+  margin-top: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.payment--table-head {
+  background: #EAEEF0;
+  width: 100%;
+}
+
+.payment--table-head tr th {
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 14px;
+  color: #7F8FA4;
+  font-family: 'Segoe UI';
+}
+
+.item {
+  width: 40%;
+}
+
+.trans {
+  width: 15%;
+} 
+
+.payment--table-body {
+  background: #fff;
+}
+
+.payment--table-row td {
+  padding: 25px 15px;
+  border-bottom: 1px solid #CCCFD4;
+  font-size: 14px;
+}
+
+td.item {
+  color: #414042;
+}
+
+td.item span {
+  background: #7F8FA4;
+  border-radius: 50px;
+  padding: 8px 7px;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+td.trans {
+  color: #7F8FA4;
+}
+
+.status button {
+  border: 1px solid #CCCFD4;
+  border-radius: 30px;
+  padding: 15px 10px;
+  width: 100%;
+  font-size: 12px;
+  font-family: 'Segoe UI';
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.status button:before {
+  content: '';
+  background: #333;
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  display: block;
+  margin: 5px 6px 0px 0px;
+}
+
+.re {
+  color: #27AE60;
+}
+
+.status button.re:before {
+  background: #27AE60;
+}
+
+.pe {
+  color: #EBC315;
+}
+
+.status button.pe:before {
+  background: #EBC315;
+}
+
+.unre{
+  color: #7F8FA4;
+}
+
+.status button.unre:before {
+  background: #7F8FA4;
 }
