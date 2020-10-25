@@ -103,6 +103,10 @@ p {
   color: var(--navbar-brand-color);
 }
 
+.navbar__menu ul li svg {
+  cursor: pointer;
+}
+
 .navbar__profile {
   display: flex;
 }
@@ -326,6 +330,10 @@ p {
   border: 1px solid #CED0DA;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.scroll-button button:hover {
+  background-color: #CED0DA;
 }
 
 .scroll-button button:nth-child(1) {

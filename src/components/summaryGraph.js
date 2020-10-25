@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Chart from "react-apexcharts";
 
-class TopGraph extends Component {
+class SummaryGraph extends Component {
   constructor(props) {
     super(props);
 
@@ -14,7 +14,7 @@ class TopGraph extends Component {
           },
         },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+          categories: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN'],
           labels: {
             show: false
           },
@@ -24,12 +24,12 @@ class TopGraph extends Component {
       series: [
         {
           name: "series-1",
-          data: [30, 40, 45, 50, 49, 60, 70, 91],
+          data: [30, 40, 45, 50, 49, 60],
           stroke: {
             curve: 'straight'
           },
-          labels: {
-            show: false
+          style: {
+            fontSize: '0px'
           }
         }
       ]
@@ -46,8 +46,7 @@ class TopGraph extends Component {
               options={this.state.options}
               series={this.state.series}
               type="area"
-              height="120"
-              width="100"
+              height="240"
             />
           </div>
         </div>
@@ -56,4 +55,4 @@ class TopGraph extends Component {
   }
 }
 
-export default TopGraph;
+export default SummaryGraph;

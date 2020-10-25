@@ -1,4 +1,5 @@
 import React from 'react';
+import SummaryGraph from './summaryGraph'
 
 const Summary = () => {
   return (
@@ -25,6 +26,10 @@ const Summary = () => {
 
         </div>
 
+        <div>
+          <SummaryGraph />
+        </div>
+        
       </div>
 
       <div className="quickview__text">
